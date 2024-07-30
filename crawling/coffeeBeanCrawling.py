@@ -21,7 +21,7 @@ if __name__ == "__main__":
     # 띄운 창 최대 크기로 확대
     driver.maximize_window()
     #1~4 초 랜덤으로 시간 텀을 둠
-    time.sleep(random.uniform(1, 4))
+    time.sleep(random.uniform(1, 2))
 
     # ID 칸
     username = driver.find_element(By.XPATH, '''//*[@id="loginForm"]/fieldset/div/div[1]/div[1]/div/p[1]/input''')
@@ -29,24 +29,24 @@ if __name__ == "__main__":
     password = driver.find_element(By.XPATH, '''//*[@id="loginForm"]/fieldset/div/div[1]/div[1]/div/p[2]/input''')
 
     # ID 칸에 내 id 넣기
-    username.send_keys("an85264")
+    username.send_keys("id")
     #1~4 초 랜덤으로 시간 텀을 둠
-    time.sleep(random.uniform(1, 4))
+    time.sleep(random.uniform(1, 2))
 
     # 비밀번호 입력 칸에 비밀번호 넣기
-    password.send_keys("524vksdoq321!")
+    password.send_keys("password")
     #1~4 초 랜덤으로 시간 텀을 둠
-    time.sleep(random.uniform(1, 4))
+    time.sleep(random.uniform(1, 2))
 
     # 로그인 버튼 클릭
     driver.find_element(By.XPATH, '''//*[@id="loginForm"]/fieldset/div/div[1]/div[1]/a''').click()
     #1~4 초 랜덤으로 시간 텀을 둠
-    time.sleep(random.uniform(1, 4))
+    time.sleep(random.uniform(1, 2))
 
     # 메뉴 버튼 클릭
     driver.find_element(By.XPATH, '''//*[@id="gnb"]/ul/li[3]/a''').click()
     #1~4 초 랜덤으로 시간 텀을 둠
-    time.sleep(random.uniform(1, 4))
+    time.sleep(random.uniform(1, 2))
 
     # 페이지 코드 가져옴
     html = driver.page_source
