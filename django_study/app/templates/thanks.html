@@ -5,6 +5,10 @@
     <title>Thank You</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'thanks.css' %}">
+    <style>
+
+
+    </style>
 </head>
 <body>
 <div class="container">
@@ -12,6 +16,7 @@
     <p>We appreciate you reaching out to us. We'll get back to you soon.
     <p/>
     <h3>{{name}}님 환영합니다.</h3>
+    <img src="/static/images/{{image}}" id="this_image" style="width:200px; height:200px;">
     <a href="{% url 'main' %}" class="btn">Back to Home</a>
 </div>
 </body>
